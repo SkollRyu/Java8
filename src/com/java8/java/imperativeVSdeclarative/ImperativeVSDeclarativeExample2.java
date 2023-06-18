@@ -26,10 +26,12 @@ public class ImperativeVSDeclarativeExample2 {
         /**
          * declarative
          */
-        List<Integer> uniqueList2 = new ArrayList<>();
+        List<Integer> uniqueList2;
         uniqueList2 = list.stream()
                 .distinct()
                 .collect(Collectors.toList());
+
+        uniqueList2.forEach(System.out::println);
 
 
     }
